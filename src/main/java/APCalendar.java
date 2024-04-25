@@ -63,6 +63,7 @@ public class APCalendar
 
     int i = 1;
     while (i < numDays){
+      i++;
       whatWeek++;
       if (whatWeek == 7){
         whatWeek = 0;
