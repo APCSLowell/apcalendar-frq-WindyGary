@@ -58,16 +58,16 @@ public class APCalendar
   public static int dayOfWeek(int month, int day, int year)
   {
     /* to be implemented in part (b) */
-    int a = firstDayOfYear(year);
+    int whatWeek = firstDayOfYear(year);
     int numDays = dayOfYear(month, day, year);
 
     int i = 1;
     while (i < numDays){
-      a++;
-      if (a == 7){
-        a = 0;
+      whatWeek++;
+      if (whatWeek == 7){
+        whatWeek = 0;
       }
     }
-    return a;
+    return whatWeek;
   }
 }
